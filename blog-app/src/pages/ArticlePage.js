@@ -1,13 +1,14 @@
 import React from "react";
 import articleContent from "./article-content";
 import ArticlesList from "../components/ArticlesList";
+import NotFoundPage from "./NotFoundPage";
 import articles from "./article-content";
 
 const ArticlePage = ({ match }) => {
   const name = match.params.name;
   const article = articleContent.find((article) => article.name === name);
 
-  if (!article) return <h1>Article Does Not Exist!</h1>;
+  if (!article) return <NotFoundPage />;
 
   const otherArticles = articleContent.filter(
     (articles) => articles.name !== name
