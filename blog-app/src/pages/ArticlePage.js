@@ -2,7 +2,6 @@ import React from "react";
 import articleContent from "./article-content";
 import ArticlesList from "../components/ArticlesList";
 import NotFoundPage from "./NotFoundPage";
-import articles from "./article-content";
 
 const ArticlePage = ({ match }) => {
   const name = match.params.name;
