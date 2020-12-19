@@ -72,3 +72,9 @@ nav a:hover {
   border-bottom: 2px solid black;
   padding: 16px;
 }
+
+#upvotes-section button,
+p {
+  display: inline-block;
+  margin-right: 16px;
+}
